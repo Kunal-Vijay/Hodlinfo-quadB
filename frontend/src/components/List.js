@@ -9,7 +9,7 @@ export default function List() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/get-data/")
+      .get("https://hodlinfo-backend.onrender.com/get-data")
       .then((response) => {
         setData(response.data);
       })
